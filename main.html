@@ -4,6 +4,36 @@
 
 <head>
 	<link rel="stylesheet" href="styles.css">
+
+	<title>HTML Assignment 3</title>
+    <style>
+        table, td, th {
+            border: 1px solid black;
+			border-collapse: collapse;
+            padding: 1px;
+        }
+        .middle {
+            margin: auto;
+            width: 100%;
+        }
+        .center {
+            text-align: center;
+        }
+        .right {
+            text-align: right;
+        }
+        .green {
+            background-color: green;
+        }
+        .blue {
+            background-color: blue;
+        }
+        img {
+            width: 300px;
+            height: auto;
+        }
+    </style>
+	
 </head>
 
 <body>
@@ -11,6 +41,76 @@
     <script type="text/javascript" src="./script.js">
 </script>
 
+	<h2 class="center">HTML Assignment #3</h2>
+
+    <!-- Table 1 -->
+    <table id="table-1" class="middle">
+        <tr>
+            <td id="t11">left</td>
+            <td id="t12" class="center">center</td>
+            <td id="t13" class="right">right</td>
+        </tr>
+        <tr>
+            <td>left</td>
+            <td class="center">center</td>
+            <td class="right">right</td>
+        </tr>
+        <tr>
+            <td>left</td>
+            <td class="center">center</td>
+            <td class="right">right</td>
+        </tr>
+    </table>
+    <br><br>
+
+    <!-- Table 2 -->
+    <table id="table-2" class="middle">
+        <!-- First row single cell spanning 6 -->
+        <tr>
+            <td id="t21" colspan="6"></td>
+        </tr>
+        <!-- Second row -->
+        <tr>
+            <td></td><td></td><td></td><td></td><td></td><td></td>
+        </tr>
+        <!-- Third row with nested table -->
+        <tr>
+            <td></td>
+            <td colspan="4">
+                <table style="width:100%; height:100%;">
+                    <tr>
+                        <td></td><td></td><td></td>
+                    </tr>
+                    <tr>
+                        <td></td><td></td><td></td>
+                    </tr>
+                </table>
+            </td>
+            <td></td>
+        </tr>
+        <!-- Fourth row -->
+        <tr>
+            <td></td><td></td><td></td><td></td><td></td><td></td>
+        </tr>
+    </table>
+    <br><br>
+
+    <!-- Table 3 -->
+    <table id="table-3" class="middle">
+        <tr class="green">
+            <td colspan="3"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td id="t-image">
+                <img src="https://www2.d125.org/applied_arts/teched/courses/WEB/portfolios/2013_FallP3/Luthra%20Portfolio/images-1.jpeg" alt="Basketball Image">
+            </td>
+            <td></td>
+        </tr>
+        <tr class="blue">
+            <td colspan="3"></td>
+        </tr>
+    </table>
 </body>
 
 </html>
